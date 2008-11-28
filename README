@@ -1,0 +1,1 @@
+Ruby script to insert Leads into SugarCRM via the set_entry SOAP API method.

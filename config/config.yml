@@ -1,0 +1,31 @@
+##Configuration YAML file
+global_settings:
+    username: uname
+    password: passwd
+    csv_filename: filename.csv
+    wsdl_url: https://url_to_sugar/soap.php?wsdl
+    module: Leads
+    lead_status: New
+    lead_source: Trade Show
+    lead_source_description: Where the lead came from
+    assigned_to: sugar_user
+    trace_xml_wire: true
+    
+field_associations:
+    first_name: First Name
+    last_name: Account Name
+    account_name: Company
+    title: Title
+    department:
+    office_phone: Telephone
+    mobile:
+    home_phone:
+    other_phone:
+    fax: Fax
+    email: Email
+    primary_address: Street1,Street2,Street3
+    city: City
+    state: State
+    postal_code: Zip
+    country: Country
+    description: Primary_Job_Function,Job_Title,Primary_Industry,Number_of_Employees,Operating_Systems,Decision_Involvement,Purchase_Timeframe,Attended_ITEC_in_last_year,Annual_IT_Budget,Products_Service_Interest,FierceCIO_Subscribe
