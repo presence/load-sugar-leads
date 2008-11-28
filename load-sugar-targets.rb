@@ -3,7 +3,6 @@ require 'rubygems'
 require 'configatron'
 require 'soap/wsdlDriver'
 require 'digest/md5'
-require 'active_support'
  
 puts ''
 puts ''
@@ -121,7 +120,6 @@ cnt = 0
 csv_leads.each do |lead|
   built_lead = build_lead(lead)
   if cnt == 0
-    puts built_lead.to_xml
     results = ws_proxy.set_entry(session['id'], $config["global_settings"]["module"], built_lead)
     if session.error.number.to_i != 0
       puts session.error.description + " (" + session.error.number + ")"
