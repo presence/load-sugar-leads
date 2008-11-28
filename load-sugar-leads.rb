@@ -14,7 +14,7 @@ puts 'Configuration file loaded...'
 #Build a hash of the CSV file of the data to be imported
 def build_csv_data 
   csv_data = Array.new
-  File.open(File.expand_path(File.dirname(__FILE__) + "/" + $config["global_settings"]["csv_filename"])) do |f|
+  File.open(File.expand_path(File.dirname(__FILE__) + "/csv_file/" + $config["global_settings"]["csv_filename"])) do |f|
     begin
       loop do
         input_line = f.readline.delete("\r\n")
