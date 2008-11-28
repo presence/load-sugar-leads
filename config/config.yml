@@ -3,29 +3,32 @@ global_settings:
     username: uname
     password: passwd
     csv_filename: filename.csv
-    wsdl_url: https://url_to_sugar/soap.php?wsdl
+    wsdl_url: https://url_to_sugarcrm/soap.php?wsdl
     module: Leads
-    lead_status: New
+    status: New
+    status_description: Entered from CSV
     lead_source: Trade Show
-    lead_source_description: Where the lead came from
-    assigned_to: sugar_user
-    trace_xml_wire: true
+    lead_source_description: Show Name
+    refered_by: Partner @ show
+    assigned_user_name: uname
+    assigned_user_id: hex_id_from_sugar
+    trace_xml_wire: false
     
 field_associations:
     first_name: First Name
-    last_name: Account Name
+    last_name: Last Name
     account_name: Company
     title: Title
     department:
-    office_phone: Telephone
+    phone_work: Telephone
     mobile:
     home_phone:
     other_phone:
     fax: Fax
-    email: Email
-    primary_address: Street1,Street2,Street3
-    city: City
-    state: State
+    email1: Email
+    primary_address_street: Street1,Street2,Street3
+    primary_address_city: City
+    primary_address_state: State
     postal_code: Zip
-    country: Country
+    primary_address_country: Country
     description: Primary_Job_Function,Job_Title,Primary_Industry,Number_of_Employees,Operating_Systems,Decision_Involvement,Purchase_Timeframe,Attended_ITEC_in_last_year,Annual_IT_Budget,Products_Service_Interest,FierceCIO_Subscribe

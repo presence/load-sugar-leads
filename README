@@ -1,1 +1,34 @@
+load-sugar-leads.rb
+
+- Description
+
 Ruby script to insert Leads into SugarCRM via the set_entry SOAP API method.
+
+- Requirements
+
+* SugarCRM v4.5+ (http://www.sugarcrm.com)
+* Ruby v1.8.6+ (http://www.ruby-lang.org)
+* Windows, Linux or OSX
+
+- Running
+
+* Copy your CSV file (without commas in any of the fields) into the 'csv_file' directory of the load-sugar-leads project
+* Set appropriate details in the global_settings section of config/config.yml
+* Run: ruby load-sugar-leads.rb
+* Let it run!
+
+- License & Warranty
+
+Copyright (C) 2008 Jason Goecke
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
